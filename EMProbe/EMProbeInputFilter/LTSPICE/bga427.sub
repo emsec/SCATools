@@ -1,0 +1,22 @@
+* C:\Users\bastian\Desktop\Stud_Richter\Probe\EMProbe\LTSPICE\bga427_component.asc
+* 1 IN
+* 2 OUT
+* 3 +V
+* 4 GND
+.subckt BGA427 1 2 3 4
+q1 n001 1 0 0 t501
+q2 3 n001 2 0 t501
+r1 n001 1 14.5k
+r3 n001 n002 2.4k
+r2 3 n001 280
+r4 2 0 170
+c1 n002 1 2.3p
+cp1 1 0 0.2p
+cp2 n002 0 0.2pf
+cp3 n001 0 0.6p
+cp4 3 0 0.1p
+cp5 2 0 0.1p
+.model t501 npn(is=0.21024f vaf=39.251 ne=1.7763 var=34.368 nc=1.3152 rbm=1.3491 cje=3.7265f tf=4.5899p itf=1.3364m vjc=0.99532 tr=1.4935n mjs=0 xti=3 bf=83.23 ikf=0.16493 br=10.526 ikr=0.25052 rb=15 re=1.9289 vje=0.70367 xtf=0.3641 ptf=0 mjc=0.48652 cjs=0 xtb=0 fc=0.99469 nf=1.0405 ise=15.761f nr=0.96647 isc=0.037223f irb=0.21215 rc=0.12691 mje=0.37747 vtf=0.19762 cjc=96.941f xcjc=0.08161 vjs=0.75 eg=1.11 tnom=300)
+.model cediode d(is=2f n=1.02 rs=20)
+d1 0 n001 cediode
+.end
