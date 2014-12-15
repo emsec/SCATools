@@ -7,4 +7,4 @@ All information can be found in the [project wiki](https://github.com/emsec/SCAT
 
 Currently, this repository contains: 
 
-1) A near-field EM probe amplifier circuit
+1) A near-field EM probe amplifier circuit: [building guide in wiki](https://github.com/emsec/SCATools/wiki/BuildEMProbe)
